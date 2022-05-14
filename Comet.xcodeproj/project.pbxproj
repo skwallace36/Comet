@@ -8,18 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		17548649281CBFFA007FE610 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17548648281CBFFA007FE610 /* AppDelegate.swift */; };
-		1754864B281CBFFA007FE610 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1754864A281CBFFA007FE610 /* ViewController.swift */; };
+		1754864B281CBFFA007FE610 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1754864A281CBFFA007FE610 /* RootViewController.swift */; };
 		1754864D281CBFFA007FE610 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1754864C281CBFFA007FE610 /* Assets.xcassets */; };
-		17548650281CBFFA007FE610 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1754864E281CBFFA007FE610 /* Main.storyboard */; };
+		17548658281CC06D007FE610 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17548657281CC06D007FE610 /* main.swift */; };
+		1754865A281CC151007FE610 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17548659281CC151007FE610 /* ChildViewController.swift */; };
+		1754865C281CC94D007FE610 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1754865B281CC94D007FE610 /* SidebarViewController.swift */; };
+		177C45CD2820245300C11212 /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177C45CC2820245300C11212 /* CGPoint+Extension.swift */; };
+		177C45CF282026F600C11212 /* MouseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177C45CE282026F600C11212 /* MouseState.swift */; };
+		177C45D12821B34600C11212 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177C45D02821B34600C11212 /* DocumentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17548645281CBFFA007FE610 /* Comet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17548648281CBFFA007FE610 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1754864A281CBFFA007FE610 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1754864A281CBFFA007FE610 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		1754864C281CBFFA007FE610 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1754864F281CBFFA007FE610 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17548651281CBFFA007FE610 /* Comet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Comet.entitlements; sourceTree = "<group>"; };
+		17548657281CC06D007FE610 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		17548659281CC151007FE610 /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		1754865B281CC94D007FE610 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
+		177C45CC2820245300C11212 /* CGPoint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
+		177C45CE282026F600C11212 /* MouseState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseState.swift; sourceTree = "<group>"; };
+		177C45D02821B34600C11212 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +62,15 @@
 		17548647281CBFFA007FE610 /* Comet */ = {
 			isa = PBXGroup;
 			children = (
+				177C45CE282026F600C11212 /* MouseState.swift */,
 				17548648281CBFFA007FE610 /* AppDelegate.swift */,
-				1754864A281CBFFA007FE610 /* ViewController.swift */,
+				17548657281CC06D007FE610 /* main.swift */,
+				1754864A281CBFFA007FE610 /* RootViewController.swift */,
+				177C45CC2820245300C11212 /* CGPoint+Extension.swift */,
+				1754865B281CC94D007FE610 /* SidebarViewController.swift */,
+				17548659281CC151007FE610 /* ChildViewController.swift */,
+				177C45D02821B34600C11212 /* DocumentViewController.swift */,
 				1754864C281CBFFA007FE610 /* Assets.xcassets */,
-				1754864E281CBFFA007FE610 /* Main.storyboard */,
 				17548651281CBFFA007FE610 /* Comet.entitlements */,
 			);
 			path = Comet;
@@ -120,7 +135,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1754864D281CBFFA007FE610 /* Assets.xcassets in Resources */,
-				17548650281CBFFA007FE610 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,23 +145,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1754864B281CBFFA007FE610 /* ViewController.swift in Sources */,
+				177C45CF282026F600C11212 /* MouseState.swift in Sources */,
+				1754865C281CC94D007FE610 /* SidebarViewController.swift in Sources */,
+				1754864B281CBFFA007FE610 /* RootViewController.swift in Sources */,
+				177C45CD2820245300C11212 /* CGPoint+Extension.swift in Sources */,
 				17548649281CBFFA007FE610 /* AppDelegate.swift in Sources */,
+				177C45D12821B34600C11212 /* DocumentViewController.swift in Sources */,
+				17548658281CC06D007FE610 /* main.swift in Sources */,
+				1754865A281CC151007FE610 /* ChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1754864E281CBFFA007FE610 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1754864F281CBFFA007FE610 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		17548652281CBFFA007FE610 /* Debug */ = {
@@ -276,7 +285,6 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,7 +311,6 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
